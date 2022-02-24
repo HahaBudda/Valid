@@ -1,0 +1,87 @@
+.body {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.container {
+    background-color: aqua;
+    display: flex;
+    min-height: 60vh;
+
+}
+
+.container__main {
+    flex-grow: 1;
+    order: 2;
+    align-self: center;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.container__nav {
+    background-color: cornflowerblue;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 20%;
+    order: 1;
+}
+
+.container__sidebar {
+    background-color: cornflowerblue;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 20%;
+    order: 3;
+}
+
+.header {
+    background-color: brown;
+    min-height: 20vh;
+}
+
+.footer {
+    background-color: brown;
+    min-height: 20vh;
+
+}
+.main__form{
+    min-width: 100% ;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form__label{
+    width: 200px;
+}
+.main__button {
+    align-self: center;
+    width: 20vw;
+    height: 5vh;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676D7;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+
+}
+.input__name, .input__name::before, .input__name::after, .input__name:focus{
+    outline: gray ;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    box-shadow: none;
+
+}
+
+.error{
+    outline: red;
+    box-sizing: border-box;
+    border: 2px solid red;
+    color: red;
+}
